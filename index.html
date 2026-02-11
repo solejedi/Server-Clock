@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 사용 가이드</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Malgun Gothic', sans-serif; /* 깔끔한 폰트 */
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 310px; /* 팝업창 크기에 맞춤 */
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* 1. 제목 스타일 */
+        header {
+            width: 100%;
+            padding: 5 px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        h2 { margin: 0; font-size: 16px; color: #2c3e50; }
+        
+        /* 2. 광고 자리 (일단 회색 박스로 표시) */
+        .ad-slot {
+            width: 300px;
+            height: 250px;
+            background-color: #e0e0e0; /* 임시 회색 배경 */
+            margin: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #888;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        /* 3. 설명 내용 스타일 */
+        .content {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 14px;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        .step { margin-bottom: 15px; }
+        .step-title { font-weight: bold; color: #007bff; display: block; margin-bottom: 4px;}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>📖 프로그램 사용 방법</h2>
+        </header>
+
+        <div class="ad-slot">
+            광고 영역 (300x250)
+        </div>
+
+        <div class="content">
+            <div class="step">
+                <span class="step-title">STEP 1. 서버 시간 측정하기</span>
+                - 주소 입력란에 url을 입력하고 녹색 세모 버튼을 눌러주세요.<br>
+	   - 자동으로 서버시간을 측정하여 가장 정확한 시간을 표시합니다.<br>
+	    *오차범위 10ms이하
+            </div>
+            <div class="step">
+                <span class="step-title">STEP 2. 기준 서버 설정하기</span>
+                - 시간차 항목을 클릭하면 해당 서버가 기준이 되며, 다른 서버에서 기준서버와의 시간차가 표시됩니다.<br>
+	    *디폴트 서버=표준시(KRISS based)
+            </div>
+            <div class="step">
+                <span class="step-title">STEP 3. PC와 동기화 하기</span>
+                - 표준시를 포함한 측정된 서버시간을 PC와 동기화 하려면 오른쪽 동기화 버튼을 눌러주세요.<br>
+	   - 수동으로 PC시간을 조절하려면 오프셋을 활용하세요!<br>
+	   *여러번 동기화 하는 것은 의미가 없습니다. 1회 측정=1회 동기화 허용<br>
+
+            </div>
+            
+            <hr style="border: 0; border-top: 1px dashed #ddd; margin: 20px 0;">
+            
+            <p style="font-size: 12px; color: #666;">
+                * 프로그램 버전: v1.0.2<br>
+                * 문의사항: <a target="_blank" href="https://open.kakao.com/o/s3oJ8Wfi">카카오 오픈 챗</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
